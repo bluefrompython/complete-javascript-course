@@ -55,7 +55,7 @@ console.log(fruitProcessor(12,2))
 */
 
 
-// ! Coding Challenge 1
+// ? Coding Challenge 1
 
 /*
 function calcAverage(a,b,c){
@@ -89,6 +89,10 @@ checkWinner(aveDolphins2,avgKoalas2);
 */ 
 
 
+// ? Arrays
+
+/*
+
 const friends = [1,2,3,4]
 
 // Add elements
@@ -115,6 +119,119 @@ console.log(friends)
 console.log(friends.indexOf(4))
 // * -1 for element not in array
 console.log(friends.indexOf(5))
-ss
 
 
+// ? list.includes compares strict equality ===
+console.log(friends.includes(4))
+console.log(friends.includes('4'))
+
+*/
+
+// ? Coding Challange 
+/*
+function calcTip (a){
+
+    if (50<= a && a<=300 ){
+        const Tip = a*0.15
+        return Tip;
+    }
+    else{
+        const Tip = a*0.2
+        return Tip ;
+    }
+  }
+
+function ternarycalcTip(a){
+    return a>= 50 && a<=300 ? a*.15 : a*.20
+}
+
+console.log(calcTip(100))
+
+const bills = [123,555,44]
+const tips =[calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])]
+
+console.log(bills,tips)
+
+const Total = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]]
+console.log(Total)
+*/
+
+// ? OBJECTS or should we call them Dictionary
+
+/* 
+const jonas = {
+    firstName: 'Aw3',
+    lastName: 'Bss',
+    age: 3,
+    job: 'teacher',
+    friends: ['lol','no','friends']
+}
+
+console.log(jonas)
+console.log(jonas.lastName,jonas['lastName'])
+let key = 'Name'
+
+// ?not allowed 
+// ! console.log(jonas['first' + key],jonas.('first'+MediaKeys))
+
+console.log(jonas['location'])
+jonas.location = 'pop'
+console.log(jonas)
+
+console.log(jonas.friends.length)
+ */
+
+//? Object Methods
+/* 
+const jonas = {
+    firstName: 'Aw3',
+    lastName: 'Bss',
+    birthYear: 2003,
+    job: 'teacher',
+    friends: ['lol','no','friends'],
+    hasDriversLicense: true,
+
+    clacAge: function(birthYear) {
+        return 2022-birthYear
+    },
+
+};
+
+console.log(jonas.clacAge    (jonas.birthYear))
+console.log(jonas['clacAge']      (0))
+
+ */
+
+// ? USING----------"THIS"--------------
+/* 
+const jonas_this = {
+    firstName: 'Aw3',
+    lastName: 'Bss',
+    birthYear: 2003,
+    job: 'teacher',
+    friends: ['lol','no','friends'],
+    hasDriversLicense: true,
+
+    clacAge: function() {
+        // console.log(this)
+        this.age= 2022-this.birthYear
+        return this.age
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.clacAge()}
+        year old teacher,
+        and he has ${this.hasDriversLicense ? 'a': 'no'}
+        driver's license` 
+    }
+};
+
+// ! we have to caclucate age(property) to access again next time
+console.log(jonas_this.age)
+console.log(jonas_this.clacAge())
+
+console.log(jonas_this.age)
+console.log(jonas_this.age)
+
+console.log(jonas_this.getSummary())
+ */
