@@ -235,3 +235,34 @@ console.log(jonas_this.age)
 
 console.log(jonas_this.getSummary())
  */
+
+// ? Coding Challenge 3
+
+/* 
+const Mark = {
+    first:'Mark',
+    last:'Miller',
+    mass:78,
+    height:1.69,
+    calcBMI: function(){
+        this.BMI = this.mass/(this.height**2)
+        return this.BMI
+    }
+}
+
+const John = {
+    first:'John',
+    last:'Smith',
+    mass:92,
+    height:1.95,
+    calcBMI: function(){
+        this.BMI = this.mass/(this.height**2)
+        return this.BMI
+    }
+}
+
+console.log(`${Mark.first}'s BMI (${Mark.calcBMI()}) is 
+${(Mark.BMI > John.calcBMI()) ? 'greater' : 'lesser'} 
+than ${John.first}'s (${John.BMI}) `)
+ */
+
